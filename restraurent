@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+void menu(){
+    int choice;
+    cout<<"restraunt menu:"<<endl;
+    cout<<"1. Pizza"<<endl;
+    cout<<"2. Burger"<<endl;
+    cout<<"3. Pasta"<<endl;
+    cout<<"4. exit"<<endl;
+    cout<<"Enter your choice:"<<endl;
+    cin>>choice;
+    if( choice==1){
+        cout<<"you selected pizza"<<endl;
+        menu();
+    }
+    if( choice==2){
+        cout<<"you selected Burger"<<endl;
+        menu();
+    }
+    if( choice==3){
+        cout<<"you selected Pasta"<<endl;
+        menu();
+    }
+    if( choice==4){
+        cout<<"thank you"<<endl;
+    }
+    else{
+        cout<<"Invalid choice"<<endl;
+    }
+}
+int main() {
+    menu();
+    return 0;
+}
